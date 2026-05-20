@@ -50,11 +50,11 @@
 
 }
 
-\date{16 mai 2024}
+\date{21 mai 2026}
 
-\titlegraphic{\includegraphics[height=0.8cm]{./figures/logoLOCIE.png}\hspace*{1cm}~%
-		\includegraphics[height=0.8cm]{./figures/logoUSMB.png}\hspace*{1cm}~%
-		\includegraphics[height=0.8cm]{./figures/logoCNRS.png}%
+\titlegraphic{\includegraphics[height=0.8cm]{figures/logoLOCIE.png}\hspace*{1cm}~%
+		\includegraphics[height=0.8cm]{figures/logoUSMB.png}\hspace*{1cm}~%
+		\includegraphics[height=0.8cm]{figures/logoCNRS.png}%
 }
 
 % produit un logo sur tous les frames !
@@ -81,22 +81,60 @@
 \begin{frame}{Glossary}
 
 \centering
-\includegraphics[width=3cm]{figures/definitions.png}
+\includegraphics[width=3cm]{figures/15_definitions.png}
 
 \raggedright
 \textbf{Data analysis}: the process of inspecting, cleansing, transforming, and modeling data to extract useful information and support decision-making.
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 
 \textbf{Statistical learning} (machine learning): a set of tools for \textit{understanding data}.
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 
 \textbf{Probabilistic modelling} (Bayesian modelling, Bayesian data analysis, Bayesian inference): explicit use of probability for quantifying uncertainty in inferences.
 
+\vspace{0.3cm}
+
+\textbf{Artificial Intelligence} (AI): cool words to use in grant applications.
+
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}{Why probabilistic modelling}
+    \centering
+ \includegraphics[width=10cm]{figures/11_problemedirect.png}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Why probabilistic modelling}
+    \centering
+ \includegraphics[width=10cm]{figures/12_problemeinverse.png}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Why probabilistic modelling}
+    \centering
+ \includegraphics[width=10cm]{figures/13_errors.png}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Why probabilistic modelling}
+    \centering
+ \includegraphics[width=10cm]{figures/14_propagation.png}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Deterministic vs probabilistic modelling}
 Deterministic models: the output is entirely determined by the inputs.
@@ -112,7 +150,7 @@ Probabilistic models:
 \end{itemize}
 
 \centering
-\includegraphics[height=2.4cm]{./figures/modelling_probabilist.png}
+\includegraphics[height=2.4cm]{figures/modelling_probabilist.png}
 
 \end{frame}
 
@@ -120,14 +158,14 @@ Probabilistic models:
 
 \begin{frame}{Deterministic vs probabilistic learning}
 \centering
-\includegraphics[height=6cm]{./figures/learning_determinist.png}
+\includegraphics[height=6cm]{figures/learning_determinist.png}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Deterministic vs probabilistic learning}
 \centering
-\includegraphics[height=6cm]{./figures/learning_probabilist.png}
+\includegraphics[height=6cm]{figures/learning_probabilist.png}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -175,13 +213,35 @@ Bayesian statistical conclusions about a parameter $\theta$, or unobserved data 
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Bayesian data analysis}
+    \centering
+ \includegraphics[width=10cm]{figures/16_summary.png}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Advantages}
+    \centering
+ \includegraphics[width=12cm]{figures/17_applications.png}
+
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{The three steps of Bayesian data analysis}
+\section{Bayesian data analysis workflow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{The three steps of Bayesian data analysis}
 
-Gelman et al. Bayesian Data Analysis
+    \centering
+ \includegraphics[width=8cm]{figures/21_threesteps.png}
 
 \hspace{0.5cm}
 
@@ -208,7 +268,7 @@ Setting up a full probability model - a joint probability distribution for all o
     \begin{columns}
     \column{0.6\textwidth}
         \centering
-        \includegraphics[height=5cm]{./figures/olr01.png}
+        \includegraphics[height=5cm]{figures/olr01.png}
     \column{0.4\textwidth}
     \begin{itemize}
         \item Energy consumption $e$
@@ -229,7 +289,7 @@ Setting up a full probability model - a joint probability distribution for all o
     \begin{columns}
     \column{0.6\textwidth}
         \centering
-        \includegraphics[height=5cm]{./figures/olr02.png}
+        \includegraphics[height=5cm]{figures/olr02.png}
     \column{0.4\textwidth}
 \begin{align*}
     e_i & =a+b \cdot \mathrm{hdd}_i \\
@@ -247,7 +307,7 @@ Setting up a full probability model - a joint probability distribution for all o
     \begin{columns}
     \column{0.6\textwidth}
         \centering
-        \includegraphics[height=5cm]{./figures/olr03.png}
+        \includegraphics[height=5cm]{figures/olr03.png}
     \column{0.4\textwidth}
 \begin{align*}
     e_i & =a+b \cdot \mathrm{hdd}_i \\
@@ -273,20 +333,14 @@ Conditioning on observed data: calculating and interpreting the appropriate post
 \begin{equation*}
     p(\theta | y) \propto p(\theta) p(y|\theta) 
 \end{equation*}
-\end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hspace{0.5cm}
 
-\begin{frame}{Conditioning on observed data}
-\textbf{Markov Chain Monte Carlo} algorithms:
-    \begin{itemize}
-        \item Metropolis-Hastings,
-        \item Gibbs,
-        \item Hamiltonian Monte-Carlo (HMC),
-        \item No U-Turn Sampling (NUTS)...
-    \end{itemize}
+\textbf{Markov Chain Monte Carlo} algorithms: Metropolis-Hastings, Gibbs, Hamiltonian Monte-Carlo (HMC), No U-Turn Sampling (NUTS), JAX...
 
-generate a sequence $\left\{\theta^{(1)},...,\theta^{(S)}\right\}$ which approximates the posterior distribution $p(\theta | y)$.
+generate a sequence $\left\{\theta^{(1)},...,\theta^{(S)}\right\}$ which approximates the posterior $p(\theta | y)$.
+
+\hspace{0.5cm}
 
 \textbf{Variational Bayesian} methods provide a locally-optimal, exact analytical solution to an approximation of the posterior.
 \end{frame}
@@ -297,7 +351,7 @@ generate a sequence $\left\{\theta^{(1)},...,\theta^{(S)}\right\}$ which approxi
     \begin{columns}
     \column{0.7\textwidth}
         \centering
-    \includegraphics[height=5cm]{./figures/olr04.png}
+    \includegraphics[height=5cm]{figures/olr04.png}
     \column{0.3\textwidth}
 \begin{align*}
     p(a) & \rightarrow p(a|y) \\
@@ -307,7 +361,7 @@ generate a sequence $\left\{\theta^{(1)},...,\theta^{(S)}\right\}$ which approxi
     \end{columns}
     
 \centering
-\includegraphics[height=1.5cm]{./figures/olr05.png}
+\includegraphics[height=1.5cm]{figures/olr05.png}
 
 \end{frame}
 
@@ -321,7 +375,7 @@ $\left\{\theta^{(1)},...,\theta^{(S)}\right\}$ approximates a \textit{joint} dis
 \end{equation*}
 
 \centering
-    \includegraphics[height=5cm]{./figures/olr06.png}
+    \includegraphics[height=5cm]{figures/olr06.png}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -344,7 +398,7 @@ The posterior predictive density for new data $\tilde{y}$ given observed data $y
 \end{equation*}
     \column{0.5\textwidth}
         \centering
-        \includegraphics[height=3cm]{./figures/forecast_probabilist.png}
+        \includegraphics[height=3cm]{figures/forecast_probabilist.png}
 \end{columns}
 Given draws from the posterior $\theta^{(m)} \sim p(\theta|y)$, draws from the posterior predictive $\tilde{y}^{(m)} \sim p(\tilde{y}|y)$ can be generated by randomly generating from the sampling distribution with the parameter draw plugged in,
 \begin{equation*}
@@ -369,7 +423,7 @@ The posterior distribution or mean of any function $f$ can be approximated as we
 \begin{columns}
     \column{0.6\textwidth}
         \centering
-        \includegraphics[height=5cm]{./figures/olr07.png}
+        \includegraphics[height=5cm]{figures/olr07.png}
     \column{0.4\textwidth}
     Estimation uncertainty:
 \begin{align*}
@@ -390,12 +444,39 @@ Sampling uncertainty:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}{Scoring rules}
+
+    \centering
+ \includegraphics[width=8cm]{figures/validation.png}
+
+\raggedright
+
+Keilman Nico. Évaluer les prévisions probabilistes de population / Evaluating Probabilistic Population Forecasts. In:
+Economie et Statistique / Economics and Statistics, n°520-521, 2020. pp. 51-68;
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Scoring rules}
+
+Continuous Ranked Probability Score (CRPS)
+
+    \centering
+ \includegraphics[width=7cm]{figures/crps.png}
+
+Image : Itamar Faran, CRPS - A Scoring Function for Bayesian Machine Learning Models
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}{Bayesian model comparison and selection}
 
 Given training data $(x,y)$ and test data $(\tilde{x},\tilde{y})$
 
 \centering
-\includegraphics[height=3cm]{./figures/forecast_probabilist2.png}
+\includegraphics[height=3cm]{figures/forecast_probabilist2.png}
 
 \raggedright
 The log pointwise predictive density is a model comparison and selection metric.
@@ -419,7 +500,7 @@ Built-in methods to estimate the expected log pointwise predictive density (elpd
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Increasing model complexity}
+\section{Some examples}
 
 \begin{frame}{Contents}
 	\tableofcontents[
@@ -429,13 +510,8 @@ Built-in methods to estimate the expected log pointwise predictive density (elpd
 ]
 \end{frame}
 
-\begin{frame}{Measurement and verification}
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/mv.png}
-\end{frame}
 
-
-\begin{frame}{M\&V with a change-point model}
+\begin{frame}{Change-point model}
     Energy use $y$ as function of ambient temperature $T_a$
     \begin{equation*}
         p(y|\theta,T_a)=\mathrm{Normal}\left[E_0+H_1(T_1-T_a)^++H_2(T_a-T_2)^+,\sigma\right]
@@ -445,12 +521,6 @@ Built-in methods to estimate the expected log pointwise predictive density (elpd
     \includegraphics[width=0.8\textwidth]{figures/changepoint.png}
 \end{frame}
 
-
-\begin{frame}{M\&V with a change-point model}
-\centering
-\includegraphics[width=0.9\textwidth]{figures/ipmvp_workflow.png}
-
-\end{frame}
 
 \begin{frame}{Autocorrelation}
 Problem: correlated prediction residuals denote a biased model.
@@ -534,7 +604,7 @@ b_{i}(y_t) = p(y_t|\theta, T_a, z_t=i)
 
 \end{itemize}
     
-    Rouchier S.  Bayesian Workflow and Hidden Markov Energy-Signature Model for Measurement and Verification. Energies 2022, 15(10), 3534
+    Rouchier S. Bayesian Workflow and Hidden Markov Energy-Signature Model for Measurement and Verification. Energies 2022, 15(10), 3534
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -583,8 +653,8 @@ Gaussian processes are additive and can be used as components in a larger model
 
 Books
 \begin{itemize}
-    \item Gelman et al. Bayesian Data Analysis
     \item Mc Elreath, Statistical Rethinking
+    \item Gelman et al. Bayesian Data Analysis
     \item Betancourt, \url{https://betanalpha.github.io/}
 \end{itemize}
 
@@ -592,7 +662,7 @@ Probabilistic programming libraries
 
 \begin{tabular}{lll}
   			PyMC & \url{https://www.pymc.io/} & Python \\
-		    Stan & \url{https://mc-stan.org/} & Python, R, Julia, Matlab...\\
+		    Stan & \url{https://mc-stan.org/} & R, Python, Julia...\\
 			Pyro & \url{http://pyro.ai/} & Python \\
 \end{tabular}
 \end{frame}
@@ -601,8 +671,8 @@ Probabilistic programming libraries
 \begin{frame}{More content}
 
 \begin{itemize}
-    \item This tutorial: \url{https://github.com/srouchier/simurex2024}
-    \item \textit{Building energy statistical modelling} book: \url{https://BuildingEnergyGeeks.org/}
+    \item This tutorial: \url{https://github.com/srouchier/simurex2026}
+    \item \textit{Building energy statistical modelling} book: \url{https://BuildingEnergyGeeks.com/}
     \item Bayesian M\&V: \url{https://srouchier.github.io/bayesmv/}
   
 \end{itemize}

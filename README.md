@@ -12,23 +12,17 @@ The most convenient way to download the content of the course is to download its
 * Open a terminal and clone the repository as follows:
 
 ```bash
-git clone https://github.com/srouchier/simurex2024.git
+git clone https://github.com/srouchier/simurex2026.git
 ```
 
-## 2\. Install PyMC
+## 2\. Install PyMC and ArviZ
 
 Option 1: follow the [installation instructions](https://www.pymc.io/projects/docs/en/stable/installation.html) on PyMC's website. Check that your setup works by running some of their examples.
 
-Option 2: if you installed Python through Anaconda and use the conda package manager, you can use the environment files provided in the repository. I have generated two yml files, for use whether you're on Windows or Linux:
+Option 2: if you installed Python through Anaconda and use the conda package manager, you can use the environment files provided in the repository.
 
 ```bash
-conda env create -f environment_win.yml
-```
-
-or
-
-```bash
-conda env create -f environment_linux.yml
+conda env create -f environment.yaml
 ```
 
 Both options install PyMC and its dependencies in a dedicated environment called pymc_env. You may install PyMC in your base environment or any other if you prefer.
